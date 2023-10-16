@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Typing Effect</title>
+    <style type="text/css">
+        .wrapper{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .typig-demo{
+            width: 34ch;
+            animation: typing 2s steps(34), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 2em;
+        }
+        @keyframes typing{
+            from{
+                width: 0;
+            }
+        }
+        @keyframes blink{
+            50%{
+                border-color: transparent;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="typig-demo">
+            Just call me Caleb =)
+        </div>
+    </div>
+</body>
+</html>
